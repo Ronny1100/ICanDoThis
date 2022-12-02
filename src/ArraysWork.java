@@ -1,8 +1,9 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class Arrays {
+public class ArraysWork {
 	
-	private static void sort(int[] list) {
+	public static void sort() {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		
@@ -13,9 +14,11 @@ public class Arrays {
 		// Minimum
 		int[] array = {6,5,2,8,9,7,4,1,3};
 		int min = array[0];
-		for (int index = 0; index < array.length; index++)
-			if (array[index] < min);
+		for (int index = 0; index < array.length; index++) {
+			if (array[index] < min) {
 				min = array[index];
+			}
+		}
 		System.out.println("The minimum value is" + min);
 		
 		// Average
@@ -28,6 +31,7 @@ public class Arrays {
 			scores[i] = keyboard.nextInt();
 		}
 		System.out.println();
+		Arrays.sort(scores);
 		for(int i = 0; i < scores.length; i++) {
 			System.out.println(scores[i]);
 		}
